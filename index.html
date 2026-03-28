@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>কুরআন বাংলা অনুবাদ — অডিও প্লেয়ার</title>
+    <meta name="description" content="কুরআনের বাংলা অনুবাদ শুনুন ও পড়ুন — সূরা, আয়াত, পারা অনুযায়ী সার্চ করুন" />
+
+    <meta property="og:title" content="কুরআন বাংলা অনুবাদ — অডিও প্লেয়ার" />
+    <meta property="og:description" content="কুরআনের বাংলা অনুবাদ শুনুন ও পড়ুন" />
+    <meta property="og:type" content="website" />
+
+    <!-- SPA redirect for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
